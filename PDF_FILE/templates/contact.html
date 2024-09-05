@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FREZZE PDF</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .contact-info {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .contact-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .contact-details {
+            text-align: center;
+            max-width: 300px;
+        }
+        .contact-details a {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">FREZZE PDF</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <!-- Person 1 -->
+            <div class="contact-details">
+                <img src="{{ url_for('static', filename='uploads/1.png') }}" alt="Sujay Krishna Photo"> <!-- Path to Sujay's photo -->
+                <p><strong>Sujay Krishna</strong></p>
+            
+               <!--<a href="https://www.linkedin.com/in/skri?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bmr%2Fdy63aT6qz6kezk7CtUQ%3D%3D" target="_blank">LinkedIn Profile</a> -->  <!-- Replace with actual LinkedIn URL -->
+                <a href="https://sujaykrishna.in/" target="_blank">Visit My Website</a> <!-- Replace with actual website URL -->
+            </div>
+            <!-- Person 2 -->
+            <div class="contact-details">
+                <img src="{{ url_for('static', filename='uploads/2.png') }}" alt="Monisha B S Photo"> <!-- Path to Monisha's photo -->
+                <p><strong>Monisha B S</strong></p>
+                
+               <!-- <a href="https://www.linkedin.com/in/monishabs?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSA%2FsBq3%2BSS2wRrqY1EwsAQ%3D%3D" target="_blank">LinkedIn Profile</a> --> <!-- Replace with actual LinkedIn URL -->
+                <a href="https://monishabs.com/" target="_blank">Visit My Website</a> <!-- Replace with actual website URL -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">&copy; 2024 Frezze PDF. | All rights reserved. | Sujay Krishna & Monisha B S</span>
+        </div>
+    </footer>
+</body>
+</html>
